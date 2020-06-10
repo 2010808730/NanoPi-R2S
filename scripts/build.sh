@@ -66,7 +66,7 @@ rm -rf openwrt
 # end of install filebrowser
 
 # install vssr
-mkdir - p friendlywrt/apckage/jerrykuku
+mkdir - p friendlywrt/package/jerrykuku
 git clone --depth 1 https://github.com/jerrykuku/lua-maxminddb.git  
 git clone --depth 1 https://github.com/jerrykuku/luci-app-vssr.git
 # end of install vssr
