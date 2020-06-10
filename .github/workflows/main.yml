@@ -71,6 +71,13 @@ jobs:
           cd ../kernel
           git remote add linux https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git
           git fetch linux linux-5.4.y && git rebase linux/linux-5.4.y
+      
+      - name: OpenWrt - Install luci-app-vssr
+        run: |
+          rm -rf vssr
+          mkdir - prk3328/friendlywrt/apckage/jerrykuku
+          git clone https://github.com/jerrykuku/lua-maxminddb.git  
+          git clone https://github.com/jerrykuku/luci-app-vssr.git  
 
       - name: OpenWrt - Install luci-app-r2sflasher
         run: |
