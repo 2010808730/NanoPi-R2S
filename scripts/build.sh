@@ -65,6 +65,13 @@ cp -a openwrt/package/ctcgfw/luci-app-filebrowser friendlywrt/package/ctcgfw/
 rm -rf openwrt
 # end of install filebrowser
 
+
+# install vssr
+mkdir - p friendlywrt/package/jerrykuku
+git clone --depth 1 https://github.com/jerrykuku/lua-maxminddb.git  
+git clone --depth 1 https://github.com/jerrykuku/luci-app-vssr.git
+# end of install vssr
+
 # install r2sflasher
 mkdir -p friendlywrt/package/songchenwen
 git clone --depth 1 https://github.com/songchenwen/nanopi-r2s.git r2sflasher
