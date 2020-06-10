@@ -66,9 +66,9 @@ rm -rf openwrt
 # end of install filebrowser
 
 # install vssr
-mkdir - prk3328/friendlywrt/apckage/jerrykuku
-git clone https://github.com/jerrykuku/lua-maxminddb.git  
-git clone https://github.com/jerrykuku/luci-app-vssr.git
+mkdir - p friendlywrt/apckage/jerrykuku
+git clone --depth 1 https://github.com/jerrykuku/lua-maxminddb.git  
+git clone --depth 1 https://github.com/jerrykuku/luci-app-vssr.git
 # end of install vssr
 
 # install r2sflasher
