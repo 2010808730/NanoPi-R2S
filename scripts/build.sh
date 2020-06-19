@@ -67,9 +67,10 @@ rm -rf openwrt
 
 
 # install vssr
-mkdir - p friendlywrt/package/jerrykuku
-git clone --depth 1 https://github.com/jerrykuku/lua-maxminddb.git  
-git clone --depth 1 https://github.com/fw876/helloworld.git
+mkdir - p friendlywrt/package/fw876  
+git clone --depth 1 https://github.com/fw876/helloworld.git vssr
+cp -a vssr/luci-app-ssr-plus friendlywrt/package/fw876/
+rm -rf vssr
 # end of install vssr
 
 # install r2sflasher
